@@ -1,0 +1,185 @@
+config SMP
+	def_bool y
+
+config SCHED_DEBUG
+	def_bool y
+
+config CC_OPTIMIZE_FOR_SIZE
+	def_bool y
+
+config GENERIC_BUG
+	def_bool y
+
+config EXTRA_FIRMWARE
+	string
+	default ""
+
+config 64BIT
+	def_bool y
+
+config GENERIC_FIND_LAST_BIT
+	def_bool y
+
+config SPLIT_PTLOCK_CPUS
+	int
+	default 4
+
+config GENERIC_CLOCKEVENTS_BUILD
+	def_bool y
+
+config GENERIC_CLOCKEVENTS_BROADCAST
+	def_bool y
+
+config GENERIC_HWEIGHT
+	def_bool y
+
+config TREE_RCU
+	def_bool y
+
+config FUTEX
+	def_bool y
+
+config EXPERIMENTAL
+	def_bool y
+
+config INIT_ENV_ARG_LIMIT
+	int
+	default 128
+
+config HIGH_RES_TIMERS
+	def_bool y
+
+config GENERIC_CLOCKEVENTS
+	def_bool y
+
+config NO_HZ
+	def_bool y
+
+config GENERIC_FIND_FIRST_BIT
+	def_bool y
+
+config HZ
+	int
+	default 1000
+
+config TICK_ONESHOT
+	def_bool y
+
+config GENERIC_CALIBRATE_DELAY
+	def_bool y
+
+config POSIX_MQUEUE
+	def_bool y
+
+config PRINTK
+	def_bool y
+
+config BUG
+	def_bool y
+
+config RWSEM_XCHGADD_ALGORITHM
+	def_bool y
+
+config RWSEM_GENERIC_SPINLOCK
+	def_bool y
+
+config FRAME_POINTER
+	def_bool y
+
+config DEBUG_INFO
+	def_bool y
+
+config CON_ZERO_CHAN
+	string
+	default "fd:0,fd:1"
+config BITREVERSE
+	def_bool y
+
+config CGROUPS
+	def_bool y
+
+config CGROUP_SCHED
+	def_bool y
+
+config CGROUP_CPUACCT
+	def_bool y
+
+config FAIR_GROUP_SCHED
+	def_bool y
+
+config SCHEDSTATS
+	def_bool y
+
+config HAVE_UNSTABLE_SCHED_CLOCK
+	def_bool y
+
+config ARCH_HAS_CACHE_LINE_SIZE
+	def_bool y
+
+config NODES_SHIFT
+	int
+	default 9
+
+config NR_CPUS
+	int
+	default 32
+
+config RT_MUTEXES
+	def_bool y
+
+config PREEMPT_NONE
+	def_bool y
+
+config DEBUG_PREEMPT
+	def_bool y
+
+config DEBUG_LIST
+	def_bool y
+
+config SPARSEMEM_ALLOC_MEM_MAP_TOGETHER
+	def_bool y
+
+config SPARSEMEM_EXTREME
+	def_bool y
+
+config SPARSEMEM_MANUAL
+	def_bool y
+
+config SPARSEMEM_VMEMMAP
+	def_bool y
+
+config SPARSEMEM_VMEMMAP_ENABLE
+	def_bool y
+
+config NEED_PER_CPU_EMBED_FIRST_CHUNK
+	def_bool y
+
+config SCHED_SMT
+	def_bool y
+
+config NEED_PER_CPU_PAGE_FIRST_CHUNK
+	def_bool y
+
+config SCHED_MC
+	def_bool y
+
+config NUMA
+	def_bool y
+
+config HOTPLUG_CPU
+	def_bool y
+
+config STOP_MACHINE
+	def_bool y
+
+config BASE_SMALL
+	def_bool y
+
+config IPV6
+	def_bool n
+
+config ARCH_TASK_STRUCT_ALLOCATOR
+	def_bool y
+
+config ARCH_THREAD_INFO_ALLOCATOR
+	def_bool y
