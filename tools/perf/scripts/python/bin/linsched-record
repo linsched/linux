@@ -1,0 +1,2 @@
+perf record -f -a -R -e sched:sched_stat_runtime \
+-e sched:sched_stat_sleep -e sched:sched_stat_iowait
