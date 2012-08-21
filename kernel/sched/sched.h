@@ -1,3 +1,5 @@
+#ifndef __KERNEL_SCHED_H
+#define __KERNEL_SCHED_H
 
 #include <linux/sched.h>
 #include <linux/mutex.h>
@@ -1157,3 +1159,5 @@ enum rq_nohz_flag_bits {
 
 #define nohz_flags(cpu)	(&cpu_rq(cpu)->nohz_flags)
 #endif
+
+#endif /* __KERNEL_SCHED_H */
